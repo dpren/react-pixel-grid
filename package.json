@@ -1,0 +1,53 @@
+{
+  "name": "react-pixel-grid",
+  "version": "0.1.0",
+  "description": "React pixel grid component based on freeman-lab/pixel-grid",
+  "main": "dist/PixelGrid.js",
+  "module": "dist/PixelGrid.js",
+  "license": "MIT",
+  "homepage": "https://github.com/dpren/react-pixel-grid",
+  "keywords": [
+    "react",
+    "pixel",
+    "grid",
+    "squares",
+    "matrix",
+    "dot matrix",
+    "lcd",
+    "pixel art"
+  ],
+  "repository": "github:dpren/react-pixel-grid",
+  "author": {
+    "name": "Darren Prentice",
+    "url": "https://github.com/dpren"
+  },
+  "dependencies": {
+    "pixel-grid": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "babel-preset-react-app": "^9.1.2",
+    "cp-cli": "^2.0.0",
+    "cross-env": "^7.0.2",
+    "del-cli": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "del-cli dist/* && npm run build-dist && npm run cp-dist2test",
+    "build-dist": "cross-env NODE_ENV=production   babel src --out-dir dist",
+    "cp-dist2test": "del-cli test/src/dist -f && cp-cli dist test/src/dist",
+    "test": "npm run build && cd test && npm i && npm run start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

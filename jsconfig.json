@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "checkJs": false,
+    "jsx": "react",
+    "sourceMap": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
