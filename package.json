@@ -1,7 +1,7 @@
 {
   "name": "react-pixel-grid",
   "version": "0.1.0",
-  "description": "React pixel grid component based on freeman-lab/pixel-grid",
+  "description": "Render a grid of squares to a webgl canvas",
   "main": "dist/PixelGrid.js",
   "module": "dist/PixelGrid.js",
   "license": "MIT",
