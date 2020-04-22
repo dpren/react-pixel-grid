@@ -41,10 +41,3 @@ const x = "#000";
     r, x, g, x, b, x,
 ]} />
 ```
-
-
-<br/><br/>
-
-### Note on animation:
-It renders updates fine at < 50 hz. But if you need that sweet 60fps let me know. I can try looking into supporting pixel-grid's [frame](https://github.com/freeman-lab/pixel-grid#pixelsframecb) callback –
-but it's tricky because React's scheduler doesn't use requestAnimationFrame like say, \*cough\* Elm, which is probably more cut out for this sort of thing, aside from vanilla js.
