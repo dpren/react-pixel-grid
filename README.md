@@ -4,6 +4,7 @@ A simple component that wraps [freeman-lab/pixel-grid](https://github.com/freema
 
 `npm install react-pixel-grid`
 
+### [Demo](https://dpren.github.io/react-pixel-grid/)
 
 ## Usage
 
