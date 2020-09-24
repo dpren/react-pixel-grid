@@ -1,6 +1,6 @@
 {
   "name": "react-pixel-grid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Render a grid of squares to a webgl canvas",
   "main": "dist/PixelGrid.js",
   "module": "dist/PixelGrid.js",
