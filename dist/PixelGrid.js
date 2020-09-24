@@ -23,10 +23,12 @@ export default (function (_ref) {
     };
   }, [].concat(_toConsumableArray(Object.values(options).flat()), [data.length]));
   useEffect(function () {
-    grid.current.frame && grid.current.frame(function () {
-      var shifted = queue.current.shift();
-      shifted && grid.current.update(shifted);
-    });
+    setTimeout(function () {
+      grid.current.frame && grid.current.frame(function () {
+        var shifted = queue.current.shift();
+        shifted && grid.current.update(shifted);
+      });
+    }, 0);
   }, []);
   useEffect(function () {
     if (queue.current.length > 30) {

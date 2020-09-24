@@ -28,7 +28,7 @@ function App() {
       padding: <input type="number" value={padding} min={0} max={20} onChange={ev => setPadding(Math.min(20, Number(ev.currentTarget.value)))} />
       resolution: <input type="number" value={resolution} min={1} max={600} onChange={ev => setResolution(Math.min(600, Number(ev.currentTarget.value)))} />
       fps: <input type="number" value={fps} min={1} max={100} onChange={ev => setFps(Math.min(80, Number(ev.currentTarget.value)))} />
-      
+
       <PixelGrid
         data={data}
         options={{
@@ -42,11 +42,11 @@ function App() {
       {/* prettier-ignore */}
       <PixelGrid
         data={[
-          x, r, x, g, x, b, 
-          r, x, g, x, b, x, 
-          x, r, x, g, x, b, 
-          r, x, g, x, b, x, 
-          x, r, x, g, x, b, 
+          x, r, x, g, x, b,
+          r, x, g, x, b, x,
+          x, r, x, g, x, b,
+          r, x, g, x, b, x,
+          x, r, x, g, x, b,
           r, x, g, x, b, x,
         ]}
         options={{ padding: 0 }}

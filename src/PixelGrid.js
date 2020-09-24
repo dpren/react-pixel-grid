@@ -19,10 +19,12 @@ export default ({ data = [], options = {}, ...props }) => {
   }, [...Object.values(options).flat(), data.length]);
 
   useEffect(() => {
-    grid.current.frame && grid.current.frame(() => {
-      const shifted = queue.current.shift();
-      shifted && grid.current.update(shifted);
-    });
+    setTimeout(() => {
+      grid.current.frame && grid.current.frame(() => {
+        const shifted = queue.current.shift();
+        shifted && grid.current.update(shifted);
+      });
+    }, 0);
   }, []);
 
   useEffect(() => {
